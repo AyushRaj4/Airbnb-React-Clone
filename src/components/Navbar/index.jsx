@@ -283,7 +283,7 @@ const Wrapper = styled.nav`
       border: transparent;
       background: transparent;
       font-size: 1rem;
-      padding: 0.8rem 1rem;
+      padding: 0.6rem 1rem;
       border-radius: 10rem;
     }
 
