@@ -61,17 +61,11 @@ const Wrapper = styled.article`
     transform: scale(1.04);
   }
 
-  @media screen and (min-width: 999.2px) {
-    .truncated-text {
-      /* white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 200px;
-      width: 100%; */
-    }
+  .bold-span {
+    font-weight: 500;
   }
 
-  .bold-span {
+  .truncated-text {
     font-weight: 500;
   }
 `;
