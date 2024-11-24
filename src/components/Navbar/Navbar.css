@@ -1,0 +1,10 @@
+.navbar {
+    background: white;
+}
+
+/* @media screen and (max-width: 744px) {
+    .navbar-dark {
+        background: rgb(71, 71, 71);
+        transition: var(--transition);
+    }
+} */
