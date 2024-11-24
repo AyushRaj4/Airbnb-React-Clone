@@ -171,7 +171,7 @@ const Wrapper = styled.nav`
 
     .nav-center {
       width: 89.5vw;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.9rem;
     }
 
     .nav-top {
@@ -228,7 +228,7 @@ const Wrapper = styled.nav`
     }
 
     .airbnb-icon {
-      color: #ff0062;
+      color: #ff0044;
     }
 
     .airbnb-icon + span {
@@ -236,7 +236,7 @@ const Wrapper = styled.nav`
       font-size: 1.3rem;
       font-weight: 600;
       font-family: Poppins;
-      color: #ff0062;
+      color: #ff0044;
     }
 
     .user-icon {
@@ -265,7 +265,7 @@ const Wrapper = styled.nav`
       row-gap: 1rem;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 1.7rem;
+      margin-bottom: 1.5rem;
       position: relative;
     }
 
@@ -356,7 +356,7 @@ const Wrapper = styled.nav`
 
     .search-btn {
       padding: 1rem;
-      background: #ff0062;
+      background: #ff325b;
       border-radius: 10rem;
       transition: var(--transition);
     }
@@ -547,13 +547,13 @@ const Navbar = () => {
   };
 
   const checkPageIconsPosition = () => {
-    const isLeftmost = pageIconsRef.current.scrollLeft < 20;
+    const isLeftmost = pageIconsRef.current.scrollLeft  === 0;
 
     const isRightmost =
       pageIconsRef.current.scrollLeft + pageIconsRef.current.clientWidth >=
-      pageIconsRef.current.scrollWidth - 60;
-    console.log(isLeftmost);
-    console.log(isRightmost);
+      pageIconsRef.current.scrollWidth - 1;
+    // console.log(isLeftmost);
+    // console.log(isRightmost);
 
     if (isLeftmost) {
       setIsAtLeft(true);

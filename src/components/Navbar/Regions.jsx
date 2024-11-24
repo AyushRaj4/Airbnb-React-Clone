@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { sea, me, uk, europe, thailand, world } from "../../exportImages";
+import { nanoid } from "nanoid";
 
 const Wrapper = styled.article`
   position: absolute;
@@ -14,23 +15,23 @@ const Wrapper = styled.article`
   h5 {
     font-weight: 600;
     margin-bottom: 1rem;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
   }
 
   .regions {
     display: grid;
     /* column-gap: 1.2rem; */
-    row-gap: .4rem;
+    row-gap: 0.4rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
   figure {
     display: flex;
     flex-direction: column;
-    row-gap: .7rem;
-    font-size: .8rem;
+    row-gap: 0.7rem;
+    font-size: 0.8rem;
     border-radius: 0.8rem;
-    padding: .7rem .7rem;
+    padding: 0.7rem 0.7rem;
   }
 
   figure:hover {
@@ -46,12 +47,12 @@ const Wrapper = styled.article`
 `;
 
 const regions = [
-  { name: "I'm flexible", img: world },
-  { name: "Europe", img: europe },
-  { name: "United Kingdom", img: uk },
-  { name: "Southeast Asia", img: sea },
-  { name: "Thailand", img: thailand },
-  { name: "Middle East", img: me },
+  { name: "I'm flexible", img: world, id: nanoid() },
+  { name: "Europe", img: europe, id: nanoid() },
+  { name: "United Kingdom", img: uk, id: nanoid() },
+  { name: "Southeast Asia", img: sea, id: nanoid() },
+  { name: "Thailand", img: thailand, id: nanoid() },
+  { name: "Middle East", img: me, id: nanoid() },
 ];
 
 const Regions = () => {
@@ -61,7 +62,7 @@ const Regions = () => {
       <div className="regions">
         {regions.map((item) => {
           return (
-            <figure>
+            <figure key={item.id}>
               <img src={item.img} alt={item.name} />
               <figcaption>{item.name}</figcaption>
             </figure>

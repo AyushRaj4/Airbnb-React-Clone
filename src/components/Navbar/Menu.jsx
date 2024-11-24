@@ -34,7 +34,7 @@ const Wrapper = styled.article`
 const Menu = () => {
   return (
     <Wrapper >
-      <div className="box" style={{ borderBottom: "1px solid #b0b0b0" }}>
+      <div className="box" style={{ borderBottom: "1px solid #e8e8e8" }}>
         <span className="menu-span" style={{ fontWeight: "500" }}>
           Sign up
         </span>

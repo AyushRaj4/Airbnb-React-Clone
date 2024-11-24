@@ -31,7 +31,7 @@ const Wrapper = styled.div`
   .slider-prev-btn {
     /* display: none; */
     position: absolute;
-    top: 49%;
+    top: 48%;
     padding: 0.5rem;
     border-radius: 10rem;
     border: transparent;
@@ -84,7 +84,7 @@ const Wrapper = styled.div`
 
   .share-btn {
     position: absolute;
-    top: 0.75rem;
+    top: 0.8rem;
     right: 0.8rem;
     padding: 0.45rem;
     border: none;
@@ -126,6 +126,8 @@ const Wrapper = styled.div`
     position: absolute;
     top: 0.8rem;
     left: 0.8rem;
+    font-size: .9rem;
+    font-weight: 500;
     padding: 0.4rem 0.75rem;
     background: #f7f7f7;
     border-radius: 10rem;
