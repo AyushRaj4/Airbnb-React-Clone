@@ -30,7 +30,7 @@ const Navmid = ({ modalNum, setModalNum, navMidTab, setNavMidTab }) => {
             ? "nav-main-menu"
             : "nav-main-menu nav-main-menu-mod"
         }
-        style={{ background: modalNum != -1 && "#e0e0e0c5" }}
+        style={{ background: modalNum != -1 && "#d6d6d680" }}
       >
         <div
           className="menu-btn"

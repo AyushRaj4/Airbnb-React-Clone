@@ -325,7 +325,7 @@ const Wrapper = styled.nav`
     }
 
     .menu-btn:hover {
-      background: #d6d6d6c5;
+      background: #d6d6d680;
     }
 
     .menu-btn span {
@@ -358,11 +358,11 @@ const Wrapper = styled.nav`
       padding: 1rem;
       background: #ff325b;
       border-radius: 10rem;
-      transition: var(--transition);
+      transition: background-color 0.2s;
     }
 
     .search-btn:hover {
-      background: #e70058;
+      background-color: #ff0064;
     }
 
     .search-glass {
@@ -547,7 +547,7 @@ const Navbar = () => {
   };
 
   const checkPageIconsPosition = () => {
-    const isLeftmost = pageIconsRef.current.scrollLeft  === 0;
+    const isLeftmost = pageIconsRef.current.scrollLeft === 0;
 
     const isRightmost =
       pageIconsRef.current.scrollLeft + pageIconsRef.current.clientWidth >=
