@@ -307,7 +307,7 @@ const Wrapper = styled.nav`
     }
 
     .nav-main-menu-mod {
-      grid-template-columns: 2fr auto 2fr auto 2fr;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
     }
 
     .menu-btn {
