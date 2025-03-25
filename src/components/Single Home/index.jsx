@@ -116,7 +116,7 @@ const SingleHome = (props) => {
           className="bold-span"
           style={{ textDecoration: showTotal ? "underline" : "" }}
         >
-          ₹{showTotal ? `${price * 5} total before taxes` : `${price} night`}
+          ₹{showTotal ? `${(price * 5).toLocaleString("en-IN")} total before taxes` : `${price.toLocaleString("en-IN")} night`}
         </span>{" "}
       </span>
       {/* <FaRegHeart style={{color:"yellow"}} /> */}

@@ -53,7 +53,7 @@ const OtherPages = () => {
     <Wrapper
       style={{ display: isModalOpen ? "none" : "" }}
       onScroll={() => {
-        console.log(22);
+        // console.log(22);
         handleScroll();
       }}
     >
