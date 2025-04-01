@@ -65,18 +65,20 @@ const Modal2 = () => {
       className={
         isModalOpen2 ? "modal-container2 show-modal2" : " modal-container2"
       }
+      onClick={() => closeModal(2)}
     >
       <section
         className={
           isModalOpen2 ? "modal2-section show-modal2-section" : "modal2-section"
         }
+        onClick={(e) => e.stopPropagation()}
       >
         <header className="header">
           <button
             className="close-btn"
             onClick={() => {
               closeModal(2);
-              document.body.classList.toggle("shadowed");
+              // document.body.classList.toggle("shadowed");
             }}
           >
             <IoCloseOutline className="close" />

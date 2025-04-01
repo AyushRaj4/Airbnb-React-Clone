@@ -12,6 +12,7 @@ const PageIcons = ({
   isAtLeft,
   isAtRight,
   checkPageIconsPosition,
+  openModal,
 }) => {
   const { goToPage, showTotal, handleShowTotal } = useGlobalContext();
   const location = useLocation().pathname;
@@ -57,18 +58,19 @@ const PageIcons = ({
       <div
         className="modify-btn"
         style={{ display: location === "/" ? "none" : "" }}
+        onClick={() => {
+          openModal(4);
+        }}
       >
         <TbAdjustmentsHorizontal className="adjustment-icon" /> Filters
       </div>
       <div
         className="modify-btn"
         style={{ display: location === "/" ? "none" : "" }}
+        onClick={handleShowTotal}
       >
         Display total before taxes
-        <button
-          className={showTotal ? "total-btn show-btn" : "total-btn"}
-          onClick={handleShowTotal}
-        >
+        <button className={showTotal ? "total-btn show-btn" : "total-btn"}>
           <span></span>
         </button>
       </div>

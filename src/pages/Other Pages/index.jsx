@@ -3,6 +3,7 @@ import { useGlobalContext } from "../../Context";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Homes, Modal2 } from "../../components";
+import Modal4 from "../../components/Modal4";
 
 const Wrapper = styled.main`
   margin-top: 175px;
@@ -61,6 +62,7 @@ const OtherPages = () => {
         <Homes state={state} indexPage={false} />
       </section>
       <Modal2 />
+      <Modal4 />
     </Wrapper>
   );
 };

@@ -529,7 +529,8 @@ const Wrapper = styled.nav`
 `;
 
 const Navbar = () => {
-  const { isModalOpen2, isAtTop, navMidTab, setNavMidTab } = useGlobalContext();
+  const { isModalOpen2, isAtTop, navMidTab, setNavMidTab, openModal } =
+    useGlobalContext();
   const pageIconsRef = useRef(null);
   const [isAtLeft, setIsAtLeft] = useState(true);
   const [isAtRight, setIsAtRight] = useState(false);
@@ -595,6 +596,7 @@ const Navbar = () => {
         isAtLeft={isAtLeft}
         isAtRight={isAtRight}
         checkPageIconsPosition={checkPageIconsPosition}
+        openModal={openModal}
       />
     </Wrapper>
   );

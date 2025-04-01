@@ -11,7 +11,9 @@ const Navtop = ({ showMenu, setShowMenu }) => {
   return (
     <div className="nav-top">
       <div className="logo-container">
-        <SiAirbnb className="airbnb-icon" />
+        <a href="https://www.airbnb.co.in/" className="airbnb-icon">
+          <SiAirbnb />
+        </a>
         <span className="logo-name">airbnb</span>
       </div>
       <div className="tabs-container tabs-container2">
@@ -29,7 +31,7 @@ const Navtop = ({ showMenu, setShowMenu }) => {
         </button>
       </div>
       <div className="nav-top-right">
-        <span>Airbnb your home</span>
+        <span style={{fontWeight: "500", letterSpacing: "-.5px"}}>Airbnb your home</span>
         <button className="world-btn">
           <TbWorld className="world-icon" />
         </button>
